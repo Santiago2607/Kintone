@@ -1,0 +1,29 @@
+// Orders List & Item List apps connection
+
+@domain = x26zuy4h5ul8.kintone.com
+# @authToken = bnVuZXpzZWJhc3RpYWdvQGdtYWlsLmNvbTogbnVuZXpzZWJhc3RpYWdvQGdtYWlsLmNvbTY0  (btoa('domain: domain64'))
+@appId = 6
+@apiToken1 = TFqoICjFYxwNVJNENWp4BqqpPt51YrAT02IX968C
+
+@apiToken2 = xlzyNdE8QNTjlCOvVvGGMAnM2s9HZjyFaqywVvUP
+
+@userCode = nunezsebastiago@gmail.com
+
+# PUT record
+PUT https://{{domain}}/k/v1/records.json
+X-Cybozu-API-Token: {{apiToken1}}
+Content-Type: application/json
+
+{
+  "app": {{appId}},
+  "stocks": [
+    {
+      "id": 1,
+      "stock": {
+        "stock": {
+          "value": (stock + updated_stock)
+        }
+      }
+    }
+  ]
+}
